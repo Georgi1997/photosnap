@@ -174,9 +174,10 @@ p.paragraph-main {
       justify-content: space-between;
       padding: 2rem 2rem; } }
   .nav__navbar {
-    width: 60%;
+    width: 50%;
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-between;
+    align-items: center; }
     @media only screen and (max-width: 920px) {
       .nav__navbar {
         width: 80%; } }

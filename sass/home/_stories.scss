@@ -1,0 +1,111 @@
+.section-stories {
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 45% 55%;
+
+  @media only screen and (max-width: 1330px) {
+    grid-template-columns: 65% 35%;
+  }
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
+  &__inverted {
+    grid-template-columns: 55% 45%;
+    @media only screen and (max-width: 1330px) {
+      grid-template-columns: 35% 35%;
+    }
+    @media only screen and (max-width: 500px) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    .story__info {
+      grid-column: 2 / span 2;
+
+      @media only screen and (max-width: 500px) {
+        grid-column: 1 / span 2;
+      }
+    }
+    .story__img {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+
+      @media only screen and (max-width: 500px) {
+      }
+    }
+  }
+  &__info {
+    width: 100%;
+    background-color: $color-white;
+    padding: 15rem 14rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      display: block;
+      height: 40%;
+      width: 3px;
+      background: $color-gradient;
+    }
+    @media only screen and (max-width: 950px) {
+      padding: 10rem 5rem;
+    }
+
+    &-black {
+      background-color: $color-black;
+      color: $color-white;
+
+      p.paragraph-main {
+        color: $color-light-grey !important;
+      }
+    }
+
+    h1.heading-main {
+      margin-bottom: 3rem;
+    }
+
+    p.paragraph-main {
+      margin-bottom: 3rem;
+      color: $color-black;
+    }
+  }
+
+  &__img {
+    width: auto;
+
+    max-height: 660px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media only screen and (max-width: 500px) {
+      height: 300px;
+      grid-row: 1 / 2;
+    }
+
+    &-1 {
+      background-image: url(../../assets/home/desktop/create-and-share.jpg);
+    }
+    &-2 {
+      background-image: url(../../assets/home/desktop/beautiful-stories.jpg);
+    }
+    &-3 {
+      background-image: url(../../assets/home/desktop/designed-for-everyone.jpg);
+    }
+
+    &-4 {
+      background-image: url(../../assets/features/desktop/hero.jpg);
+    }
+
+    &-5 {
+      background-image: url(../../assets/pricing/desktop/hero.jpg);
+    }
+  }
+}

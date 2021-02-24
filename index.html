@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <!-- personal css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Photosnap Website Challenge</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <nav class="nav">
+      <img
+        src="assets/shared/desktop/logo.svg"
+        alt="Photosnap logo"
+        class="nav__logo"
+      />
+      <div class="nav__navbar">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="stories.html" class="nav__link">stories</a>
+          </li>
+          <li class="nav__item">
+            <a href="features.html" class="nav__link">features</a>
+          </li>
+          <li class="nav__item">
+            <a href="pricing.html" class="nav__link">pricing</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-main">get an invite</a>
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="section-stories">
+        <div class="story">
+          <div class="story__info story__info-black">
+            <h1 class="heading-main">create and share your photo stories.</h1>
+            <p class="paragraph-main">
+              Photosnap is a platform for photographers and visual storytellers.
+              We make it easy to share photos, tell stories and connect with
+              others.
+            </p>
+            <a href="#" class="btn-secondary btn-secondary-white">
+              get an invite <img src="assets/shared/desktop/arrow.svg" alt=""
+            /></a>
+          </div>
+          <div class="story__img story__img-1"></div>
+        </div>
+        <div class="story story__inverted">
+          <div class="story__info">
+            <h1 class="heading-main">Beautiful stories every time</h1>
+            <p class="paragraph-main">
+              We provide design templates to ensure your stories look terrific.
+              Easily add photos, text, embed maps and media from other networks.
+              Then share your story with everyone.
+            </p>
+            <a href="#" class="btn-secondary">
+              View the stories
+              <img src="assets/shared/desktop/arrow2.svg" alt=""
+            /></a>
+          </div>
+          <div class="story__img story__img-2"></div>
+        </div>
+        <div class="story">
+          <div class="story__info">
+            <h1 class="heading-main">Designed for everyone</h1>
+            <p class="paragraph-main">
+              Photosnap can help you create stories that resonate with your
+              audience. Our tool is designed for photographers of all levels,
+              brands, businesses you name it.
+            </p>
+            <a href="#" class="btn-secondary">
+              View the stories
+              <img src="assets/shared/desktop/arrow2.svg" alt=""
+            /></a>
+          </div>
+          <div class="story__img story__img-3"></div>
+        </div>
+      </section>
+      <section class="section-gallery">
+        <div class="gallery">
+          <div class="gallery__story gallery__story-1">
+            <div class="gallery__story__text">
+              <h4 class="heading-quaternary">April 16th 2020</h4>
+              <h3 class="heading-tertiary">the mountains</h3>
+              <span class="gallery-span">by John Appleseed</span>
+            </div>
+            <a href="#" class="btn-secondary btn-secondary-white"
+              >read story <img src="assets/shared/desktop/arrow.svg" alt=""
+            /></a>
+          </div>
+          <div class="gallery__story gallery__story-2">
+            <div class="gallery__story__text">
+              <h4 class="heading-quaternary">April 14th 2020</h4>
+              <h3 class="heading-tertiary">Sunset Cityscapes</h3>
+              <span class="gallery-span"> by Benjamin Cruz</span>
+            </div>
+            <a href="#" class="btn-secondary btn-secondary-white"
+              >read story <img src="assets/shared/desktop/arrow.svg" alt=""
+            /></a>
+          </div>
+          <div class="gallery__story gallery__story-3">
+            <div class="gallery__story__text">
+              <h4 class="heading-quaternary">April 11th 2020</h4>
+              <h3 class="heading-tertiary">18 Days Voyage</h3>
+              <span class="gallery-span"> by Alexei Borodin</span>
+            </div>
+            <a href="#" class="btn-secondary btn-secondary-white"
+              >read story <img src="assets/shared/desktop/arrow.svg" alt=""
+            /></a>
+          </div>
+          <div class="gallery__story gallery__story-4">
+            <div class="gallery__story__text">
+              <h4 class="heading-quaternary">April 9th 2020</h4>
+              <h3 class="heading-tertiary">Architecturals</h3>
+              <span class="gallery-span"> by Samantha Brooke</span>
+            </div>
+            <a href="#" class="btn-secondary btn-secondary-white"
+              >read story <img src="assets/shared/desktop/arrow.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section class="section-features">
+        <div class="features">
+          <div class="features__box">
+            <img
+              src="assets/features/desktop/responsive.svg"
+              alt="Responsive icon"
+              class="features__box__img"
+            />
+            <h3 class="heading-tertiary">100% Responsive</h3>
+            <p class="paragraph-main">
+              No matter which the device you’re on, our site is fully responsive
+              and stories look beautiful on any screen.
+            </p>
+          </div>
+          <div class="features__box">
+            <img
+              src="assets/features/desktop/no-limit.svg"
+              alt="Responsive icon"
+              class="features__box__img"
+            />
+
+            <h3 class="heading-tertiary">
+              <br />
+              No Photo Upload Limit
+            </h3>
+            <p class="paragraph-main">
+              Our tool has no limits on uploads or bandwidth. Freely upload in
+              bulk and share all of your stories in one go.
+            </p>
+          </div>
+          <div class="features__box">
+            <img
+              src="assets/features/desktop/embed.svg"
+              alt="Responsive icon"
+              class="features__box__img"
+            />
+            <h3 class="heading-tertiary">Available to Embed</h3>
+            <p class="paragraph-main">
+              Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+              videos, Google Maps, and more.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__left">
+        <div class="footer__social-container">
+          <img
+            src="assets/shared/desktop/logo2.svg"
+            alt="logo of photos"
+            class="footer__logo"
+          />
+          <div class="footer__social">
+            <i class="fab fa-facebook fb"></i>
+            <i class="fab fa-youtube yt"></i>
+            <i class="fab fa-twitter tw"></i>
+            <i class="fab fa-pinterest ps"></i>
+            <i class="fab fa-instagram in"></i>
+          </div>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a href="index.html" class="footer__link">home</a>
+          </li>
+          <li class="footer__item">
+            <a href="stories.html" class="footer__link">stories</a>
+          </li>
+          <li class="footer__item">
+            <a href="features.html" class="footer__link">features</a>
+          </li>
+          <li class="footer__item">
+            <a href="pricing.html" class="footer__link">pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <a href="" class="btn-secondary btn-secondary-white"
+          >get an invite <img src="assets/shared/desktop/arrow.svg" alt=""
+        /></a>
+        <span class="footer__span">Copyright 2021.All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

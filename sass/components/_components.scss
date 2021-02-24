@@ -1,0 +1,169 @@
+h1.heading-main {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 4.17;
+  text-transform: uppercase;
+}
+
+h2.heading-secondary {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.5;
+}
+
+h3.heading-tertiary {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+}
+
+h4.heading-quaternary {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+p.paragraph-main {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+//Buttons
+//Buttons
+//Buttons
+
+.btn-main {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    padding: 1rem 3rem;
+
+    background-color: $color-black;
+    color: $color-white;
+
+    &:hover,
+    &:active {
+      background-color: $color-light-grey;
+      color: $color-black;
+    }
+  }
+}
+
+.btn-secondary {
+  &,
+  &:link,
+  &:visited {
+    color: $color-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: "";
+      transition: all 1s ease;
+
+      height: 1px;
+      background-color: $color-black;
+      width: 0;
+    }
+
+    &:hover.btn-secondary::before {
+      width: 100%;
+    }
+  }
+
+  &-white {
+    color: white !important;
+
+    &:hover.btn-secondary::before {
+      background-color: white;
+    }
+  }
+}
+
+////SWITCH BUTTON
+////SWITCH BUTTON
+////SWITCH BUTTON
+.switch-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h4.heading-quaternary {
+    margin: 0 1rem;
+
+    font-size: 1.5rem;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + .slider {
+      background-color: $color-black;
+    }
+    &:focus + .slider {
+      box-shadow: 0 0 1px #2169f3;
+    }
+
+    &:checked + .slider::before {
+      transform: translateX(26px);
+      background-color: $color-white;
+    }
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s ease;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: $color-black;
+      transition: all 0.4s ease;
+    }
+  }
+}
+.slider.round {
+  border-radius: 34px;
+  &::before {
+    border-radius: 50%;
+  }
+}

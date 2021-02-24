@@ -1,0 +1,49 @@
+//colors
+$color-black: #000000;
+$color-white: #ffffff;
+$color-light-grey: #dfdfdf;
+
+$color-gradient: linear-gradient(30deg, #ffc593 0%, #bc7198 60%, #5a77ff 78%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+  @media only screen and (min-width: 2560px) {
+    font-size: 70%;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+
+  @media only screen and (min-width: 1440px) {
+    background-image: url(../../assets/home/desktop/pexels-tobias-bjørkli-1693095.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+main.main,
+footer.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 2560px) {
+    max-width: 1700px;
+  }
+}

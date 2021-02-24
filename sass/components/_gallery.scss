@@ -1,0 +1,205 @@
+.section-gallery {
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+  @media (min-width: 1050px) and (max-width: 1400px) {
+    grid-template-columns: repeat(auto-fit, minmax(47rem, 1fr));
+  }
+
+  &__story {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 50rem;
+    color: $color-white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease;
+
+    position: relative;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: transparent;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:hover.gallery__story::after {
+      background-image: $color-gradient;
+    }
+
+    &:hover {
+      transform: translateY(-2rem);
+    }
+
+    a.btn-secondary {
+      color: $color-white;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &-1 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/mountains.jpg);
+    }
+    &-2 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/cityscapes.jpg);
+    }
+    &-3 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/18-days-voyage.jpg);
+    }
+    &-4 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/architecturals.jpg);
+    }
+
+    &-5 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/world-tour.jpg);
+    }
+    &-6 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/unforeseen-corners.jpg);
+    }
+    &-7 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/king-on-africa.jpg);
+    }
+    &-8 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/trip-to-nowhere.jpg);
+    }
+    &-9 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/rage-of-the-sea.jpg);
+    }
+    &-10 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/running-free.jpg);
+    }
+    &-11 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/behind-the-waves.jpg);
+    }
+    &-12 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/calm-waters.jpg);
+    }
+    &-13 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/milky-way.jpg);
+    }
+    &-14 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/dark-forest.jpg);
+    }
+    &-15 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/somwarpet.jpg);
+    }
+    &-16 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.5)
+        ),
+        url(../../assets/stories/desktop/land-of-dreams.jpg);
+    }
+    &__text {
+      width: 100%;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+  }
+
+  h4.heading-quaternary {
+    margin-bottom: 0.5rem;
+  }
+  &-span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 1rem;
+      height: 1px;
+      width: 100%;
+      background-color: rgba($color-white, 0.4);
+    }
+  }
+}

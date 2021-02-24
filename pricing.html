@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <!-- personal css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Photosnap Website Challenge</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <nav class="nav">
+      <img
+        src="assets/shared/desktop/logo.svg"
+        alt="Photosnap logo"
+        class="nav__logo"
+      />
+      <div class="nav__navbar">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="stories.html" class="nav__link">stories</a>
+          </li>
+          <li class="nav__item">
+            <a href="features.html" class="nav__link">features</a>
+          </li>
+          <li class="nav__item">
+            <a href="pricing.html" class="nav__link">pricing</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-main">get an invite</a>
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="section-stories">
+        <div class="story">
+          <div class="story__info story__info-black">
+            <h1 class="heading-main">Pricing</h1>
+            <p class="paragraph-main">
+              Create a your stories, Photosnap is a platform for photographers
+              and visual storytellers. It’s the simple way to create and share
+              your photos.
+            </p>
+          </div>
+          <div class="story__img story__img-5"></div>
+        </div>
+      </section>
+      <section class="section-pricing">
+        <form class="switch-form">
+          <h4 class="heading-quaternary">Monthly</h4>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <h4 class="heading-quaternary">Yearly</h4>
+        </form>
+        <div class="pricing">
+          <div class="pricing__card">
+            <h2 class="heading-secondary">basic</h2>
+            <p class="paragraph-main">
+              Includes basic usage of our platform. Recommended for new and
+              aspiring photographers.
+            </p>
+            <h1 class="heading-main">$19.00</h1>
+            <h1 class="heading-main hidden">$190.00</h1>
+            <span class="span">per month</span>
+            <span class="span hidden">per year</span>
+
+            <a href="#" class="btn-main">pick plan</a>
+          </div>
+          <div class="pricing__card pricing__card-pro">
+            <h2 class="heading-secondary">pro</h2>
+            <p class="paragraph-main">
+              More advanced features available. Recommended for photography
+              veterans and professionals.
+            </p>
+            <h1 class="heading-main">$39.00</h1>
+            <h1 class="heading-main hidden">$390.00</h1>
+            <span class="span">per month</span>
+            <span class="span hidden">per year</span>
+
+            <a href="#" class="btn-main">pick plan</a>
+          </div>
+          <div class="pricing__card">
+            <h2 class="heading-secondary">business</h2>
+            <p class="paragraph-main">
+              Additional features available such as more detailed metrics.
+              Recommended for business owners.
+            </p>
+            <h1 class="heading-main">$99.00</h1>
+            <h1 class="heading-main hidden">$990.00</h1>
+            <span class="span">per month</span>
+            <span class="span hidden">per year</span>
+
+            <a href="#" class="btn-main">pick plan</a>
+          </div>
+        </div>
+      </section>
+      <section class="section-compare">
+        <div class="compare">
+          <h1 class="heading-main">compare</h1>
+          <table class="table">
+            <tr class="table__row">
+              <th class="table__heading">the features</th>
+              <th class="table__heading">basic</th>
+              <th class="table__heading">pro</th>
+              <th class="table__heading">business</th>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">unlimited story posting</td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">unlimited photo upload</td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">embedding custom content</td>
+              <td class="table__data"></td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">customize metadata</td>
+              <td class="table__data"></td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">advanced metrics</td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">photo downloads</td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">search engine indexing</td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">custom data analytics</td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data">
+                <img src="assets/pricing/desktop/check.svg" alt="" />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="section-beta">
+        <div class="beta">
+          <div class="beta__text">
+            <h1 class="heading-main">We're in Beta. Get your invite today!</h1>
+          </div>
+          <div class="beta__btn">
+            <a href="#" class="btn-secondary btn-secondary-white"
+              >get an invite<img src="assets/shared/desktop/arrow.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__left">
+        <div class="footer__social-container">
+          <img
+            src="assets/shared/desktop/logo2.svg"
+            alt="logo of photos"
+            class="footer__logo"
+          />
+          <div class="footer__social">
+            <i class="fab fa-facebook fb"></i>
+            <i class="fab fa-youtube yt"></i>
+            <i class="fab fa-twitter tw"></i>
+            <i class="fab fa-pinterest ps"></i>
+            <i class="fab fa-instagram in"></i>
+          </div>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a href="index.html" class="footer__link">home</a>
+          </li>
+          <li class="footer__item">
+            <a href="stories.html" class="footer__link">stories</a>
+          </li>
+          <li class="footer__item">
+            <a href="features.html" class="footer__link">features</a>
+          </li>
+          <li class="footer__item">
+            <a href="pricing.html" class="footer__link">pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <a href="" class="btn-secondary btn-secondary-white"
+          >get an invite <img src="assets/shared/desktop/arrow.svg" alt=""
+        /></a>
+        <span class="footer__span">Copyright 2021.All Rights Reserved</span>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+<!-- Stories
+  Features
+  Pricing
+
+  Get an invite
+
+  
+  
+
+  Monthly
+  Yearly
+
+  Basic
+  
+  $19.00 per month
+  $190.00 per year
+  Pick Plan
+
+  Pro
+  
+  $39.00 per month
+  $390.00 per year
+  Pick Plan
+
+  Business
+  
+  $99.00 per month
+  $990.00 per year
+  Pick Plan
+
+  Compare
+
+  The Features
+
+  Basic
+  Pro
+  Business
+
+  Unlimited Story Posting
+  Unlimited Photo Upload
+  Embedding Custom Content
+  Customize Metadata
+  Advanced Metrics
+  Photo Downloads
+  Search Engine Indexing
+  Custom Analytics
+
+  We're in Beta. Get your invite today!
+  
+  Get an invite
+
+  Home
+  Stories
+  Features
+  Pricing
+
+  Get an invite
+
+  Copyright 2019. All Rights Reserved -->

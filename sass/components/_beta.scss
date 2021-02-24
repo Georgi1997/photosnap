@@ -1,0 +1,49 @@
+section.section-beta {
+  padding: 7rem;
+  background-image: url(../../assets/shared/desktop/bg-beta.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.beta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__text {
+    color: $color-white;
+    width: 70%;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+    }
+    h1.heading-main {
+    }
+  }
+
+  &__btn {
+    width: 24rem;
+    a.btn-secondary {
+      color: currentColor;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        // margin-left: 9rem;
+      }
+      @media only screen and (max-width: 600px) {
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5rem;
+      }
+    }
+  }
+}

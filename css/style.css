@@ -591,7 +591,13 @@ section.section-hero {
   padding: 12rem;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../assets/stories/desktop/moon-of-appalacia.jpg);
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
+  @media only screen and (max-width: 900px) {
+    section.section-hero {
+      padding: 7rem; } }
+  @media only screen and (max-width: 400px) {
+    section.section-hero {
+      padding: 5rem 3rem; } }
 
 .hero {
   width: 30%;
@@ -600,6 +606,12 @@ section.section-hero {
   align-items: flex-start;
   justify-content: space-evenly;
   color: #ffffff; }
+  @media only screen and (max-width: 1400px) {
+    .hero {
+      width: 60%; } }
+  @media only screen and (max-width: 900px) {
+    .hero {
+      width: 100%; } }
   .hero h4.heading-quaternary {
     text-transform: uppercase;
     margin-bottom: 2rem; }

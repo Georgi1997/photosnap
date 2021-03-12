@@ -157,6 +157,7 @@ p.paragraph-main {
     border-radius: 50%; }
 
 .nav {
+  z-index: 101;
   height: 6vh;
   position: relative;
   max-width: 1440px;
@@ -244,6 +245,10 @@ p.paragraph-main {
 .nav-active {
   transform: translateY(0); }
 
+.nav.sticky {
+  position: fixed;
+  margin: 0 auto; }
+
 .triggerAnim .line1 {
   transform: rotate(-45deg) translate(-5px, 0px); }
 
@@ -251,6 +256,7 @@ p.paragraph-main {
   transform: rotate(45deg) translate(-5px, 0px); }
 
 .overlay {
+  z-index: 100;
   position: fixed;
   display: none;
   width: 100vw;
@@ -259,7 +265,8 @@ p.paragraph-main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px); }
 
 section.section-beta {
   padding: 7rem;
